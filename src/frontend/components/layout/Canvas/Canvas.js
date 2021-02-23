@@ -7,6 +7,9 @@ import PropTypes from 'prop-types';
 // Local
 import './Canvas.scss';
 
+// Namespace
+const NS = 'Canvas';
+
 /**
  * @class
  * @description 
@@ -15,11 +18,11 @@ const Canvas = props => {
 	// States
 
 	// Variables
-	
+
 	// Render
 	return (
-		<div className='Canvas'>
-			Canvas<br />
+		<div className={NS}>
+			{NS}
 			<React.Suspense fallback=''>{props.children}</React.Suspense>
 		</div>
 	);
@@ -27,7 +30,6 @@ const Canvas = props => {
 
 // DefaultProps
 Canvas.defaultProps = {
-	// className: 'Canvas'
 };
 
 // PropTypes

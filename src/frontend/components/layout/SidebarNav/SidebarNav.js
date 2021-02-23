@@ -7,6 +7,9 @@ import PropTypes from 'prop-types';
 // Local
 import './SidebarNav.scss';
 
+// Namespace
+const NS = 'SidebarNav';
+
 /**
  * @class
  * @description 
@@ -18,7 +21,8 @@ const SidebarNav = props => {
 
 	// Render
 	return (
-		<nav className='SidebarNav'>
+		<nav className={NS}>
+			{NS}
 			<ul>
 				{ props.menuItems.map((e, i) => <li key={i} className={e.className} alt={e.alt} onClick={e.onClick}>{e.title}</li>) }
 			</ul>
@@ -32,7 +36,6 @@ const defaultMenuItems = [
 
 // DefaultProps
 SidebarNav.defaultProps = {
-	// className: 'SidebarNav'
 	menuItems: defaultMenuItems,
 };
 

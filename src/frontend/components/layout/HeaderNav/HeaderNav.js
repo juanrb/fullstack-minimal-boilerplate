@@ -1,16 +1,33 @@
+// Libs
 import React, {
 	// useState,
 } from 'react';
 
+// Local
 import './HeaderNav.scss';
 
+// Namespace
+const NS = 'HeaderNav';
+
+/**
+ * @class
+ * @description 
+ */
 const HeaderNav = props => {
-	return <div className='HeaderNav'>HeaderNav</div>
+	// States
+
+	// Variables
+
+	// Render
+	return (
+		<div className={NS}>
+			{NS}
+		</div>
+	);
 }
 
 // DefaultProps
 HeaderNav.defaultProps = {
-	// className: 'HeaderNav'
 };
 
 // PropTypes

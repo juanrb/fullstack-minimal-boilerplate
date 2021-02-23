@@ -7,6 +7,9 @@ import PropTypes from 'prop-types';
 // Local
 import './Home.scss';
 
+// Namespace
+const NS = 'Home';
+
 /**
  * @class
  * @description 
@@ -15,18 +18,17 @@ const Home = props => {
 	// States
 
 	// Variables
-	
+
 	// Render
 	return (
-		<div className='Home'>
-			Home
+		<div className={NS}>
+			{NS}
 		</div>
 	);
 }
 
 // DefaultProps
 Home.defaultProps = {
-	// className: 'Home'
 };
 
 // PropTypes

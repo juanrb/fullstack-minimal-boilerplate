@@ -11,7 +11,8 @@ import Footer from '../Footer/Footer';
 import HeaderNav from '../HeaderNav/HeaderNav';
 import SidebarNav from '../SidebarNav/SidebarNav';
 
-// Styles
+// Namespace
+const NS = 'Admin';
 
 /**
  * @class
@@ -24,7 +25,8 @@ const Admin = props => {
 
 	// Render
 	return (
-		<div className='Admin'>
+		<div className={NS}>
+			{NS}
 			<HeaderNav {...props} />
 			<SidebarNav {...props} />
 			<Canvas {...props} />
@@ -35,7 +37,6 @@ const Admin = props => {
 
 // DefaultProps
 Admin.defaultProps = {
-	// className: 'Admin'
 };
 
 // PropTypes

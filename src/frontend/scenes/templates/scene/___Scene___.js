@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 // Local
 import './___Scene___.scss';
 
+// Namespace
+const NS = '___Scene___';
 
 /**
  * @class
@@ -17,16 +19,13 @@ const ___Scene___ = props => {
 
 	return (
 		<div className={NS}>
-			<Card>
-				Hello { props.className }
-			</Card>
+			{NS}
 		</div>
 	);
 }
 
 // DefaultProps
 ___Scene___.defaultProps = {
-	// className: '___Scene___'
 };
 
 // PropTypes

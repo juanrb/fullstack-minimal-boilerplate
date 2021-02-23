@@ -4,13 +4,28 @@ import React, {
 
 import './Footer.scss';
 
+// Namespace
+const NS = 'Footer';
+
+/**
+ * @class
+ * @description 
+ */
 const Footer = props => {
-	return <div className='Footer'>Footer</div>
+	// States
+
+	// Variables
+
+	// Render
+	return (
+		<div className={NS}>
+			{NS}
+		</div>
+	);
 }
 
 // DefaultProps
 Footer.defaultProps = {
-	// className: 'Footer'
 };
 
 // PropTypes

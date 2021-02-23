@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 // Local
 import './___Component___.scss';
 
+// Namespace
+const NS = '___Component___';
 
 /**
  * @class
@@ -13,20 +15,18 @@ import './___Component___.scss';
 const ___Component___ = props => {
 	// States
 
-	// Props
+	// Variables
 
+	// Render
 	return (
 		<div className={NS}>
-			<Card>
-				Hello { props.className }
-			</Card>
+			{NS}
 		</div>
 	);
 }
 
 // DefaultProps
 ___Component___.defaultProps = {
-	// className: '___Component___'
 };
 
 // PropTypes
