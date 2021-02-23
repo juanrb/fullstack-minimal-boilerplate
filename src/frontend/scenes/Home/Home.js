@@ -1,6 +1,6 @@
 // Libs
 import React, {
-	// useState,
+	useEffect,
 } from 'react';
 import PropTypes from 'prop-types';
 
@@ -10,6 +10,11 @@ import './Home.scss';
 // Namespace
 const NS = 'Home';
 
+// Globals
+const api = {
+	home: require('./api').default.home,
+}
+
 /**
  * @class
  * @description 
@@ -18,6 +23,17 @@ const Home = props => {
 	// States
 
 	// Variables
+
+	useEffect(() => {
+		/**
+		 * @async
+		 * @description 
+		 */
+		(async function fetchData() {
+			api.home.getAll(null, res => null, res => null, res => null);
+		})();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
 	// Render
 	return (
