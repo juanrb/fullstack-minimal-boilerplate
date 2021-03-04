@@ -1,14 +1,16 @@
 // Local
 import { helpers } from '../../helpers';
-import settings from '../../config/settings';
 import environment from '../../../environment';
 
-// const ENDPOINT = settings.routes.home;
 const ENDPOINT = 'posts';
 
+/**
+ * use json placeholder or node backend
+ * @example jsonplaceholder endpoints: posts, comments, albums, photos, todos, users
+ */
 let api = {
-	// home: helpers.api.crudFactory(environment.apis.jsonPlaceholder.url, ENDPOINT),
-	home: helpers.api.crudFactory(environment.server.url, ENDPOINT, environment.server.headers),
+	home: helpers.api.crudFactory(environment.apis.jsonPlaceholder.url, ENDPOINT),
+	// home: helpers.api.crudFactory(environment.server.url, ENDPOINT, environment.server.headers),
 }
 
 export default api;

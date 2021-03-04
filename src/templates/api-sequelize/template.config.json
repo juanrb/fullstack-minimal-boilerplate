@@ -1,4 +1,4 @@
 {
 	"name": "Api template (sequelize)",
-	"variables": [ "ApiName" ]
+	"variables": [ "apiname" ]
 }

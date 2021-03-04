@@ -1,4 +1,4 @@
 {
 	"name": "Api template (no db)",
-	"variables": [ "ApiName" ]
+	"variables": [ "apiname" ]
 }

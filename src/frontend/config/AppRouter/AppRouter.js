@@ -24,8 +24,10 @@ const AppRouter = props => {
 	return (
 		<BrowserRouter>
 			<Switch className='AppRouter'>
+				{/* Scenes */}
 				<Route exact path={routes.home} render={props => <Admin {...props}><Home {...props} /></Admin>} />
 
+				{/* Default rounting */}
 				<Route exact path='/' render={() => <Redirect exact from='/' to={routes.home} />} />
 				<Route render={() => <Redirect to='/' />} />
 			</Switch>
