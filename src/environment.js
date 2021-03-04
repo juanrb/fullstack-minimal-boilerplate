@@ -17,10 +17,13 @@ module.exports = {
 		user: process.env.REACT_APP_DB_USER,
 		pass: process.env.REACT_APP_DB_PASS,
 	},
-
+	
 	server: {
 		cdn: process.env.REACT_APP_SERVER_CDN_URL,
-		url: `${process.env.REACT_APP_SERVER_URL}:${process.env.REACT_APP_SERVER_PORT}/`,
+		headers: {
+			'Content-Type': 'application/json',
+		},
 		port: process.env.REACT_APP_SERVER_PORT,
+		url: `${process.env.REACT_APP_SERVER_URL}:${process.env.REACT_APP_SERVER_PORT}/api/`,
 	},
 }

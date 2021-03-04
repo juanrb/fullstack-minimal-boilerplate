@@ -7,8 +7,8 @@ import environment from '../../../environment';
 const ENDPOINT = 'posts';
 
 let api = {
-	home: helpers.api.crudFactory(environment.apis.jsonPlaceholder.url, ENDPOINT, settings.backend.headers),
-	backTest: helpers.api.crudFactory(settings.backend.url, ENDPOINT, settings.backend.headers),
+	// home: helpers.api.crudFactory(environment.apis.jsonPlaceholder.url, ENDPOINT),
+	home: helpers.api.crudFactory(environment.server.url, ENDPOINT, environment.server.headers),
 }
 
 export default api;

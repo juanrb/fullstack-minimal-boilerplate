@@ -80,7 +80,7 @@ const request = (method, headers, body, endpoint, success, reject, error) => {
 
 	// options for fetch
 	const fetchOptions = {
-		headers,
+		...(headers && { headers }),
 		...fetchBody,
 		method
 	};
@@ -91,7 +91,7 @@ const request = (method, headers, body, endpoint, success, reject, error) => {
 };
 
 
-const crudFactory = (backendUrl, endpoint, headers) => ({
+const crudFactory = (backendUrl, endpoint, headers = null) => ({
 	/**
 	 * @method
 	 * @description 
