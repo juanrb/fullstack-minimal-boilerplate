@@ -12,7 +12,7 @@ import settings from '../settings';
 import Admin from '../../components/layout/Admin/Admin';
 import Home from '../../scenes/Home/Home';
 
-// NOTE: How to lazy load --> const Users = React.lazy(() => import('../scenes/Users/Users'));
+// NOTE: How to lazy load each scene --> const Users = React.lazy(() => import('../scenes/Users/Users'));
 
 const AppRouter = props => {
 	// States
