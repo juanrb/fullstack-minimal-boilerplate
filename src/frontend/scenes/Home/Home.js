@@ -11,9 +11,7 @@ import './Home.scss';
 const NS = 'Home';
 
 // Globals
-const api = {
-	home: require('./api').default.home,
-}
+const api = require('./api').default;
 
 /**
  * @class
@@ -30,7 +28,8 @@ const Home = props => {
 		 * @description 
 		 */
 		(async function fetchData() {
-			api.home.getAll(null, res => console.table(res), res => null, res => null);
+			api.home.getAll(null, res => console.table('home', res), res => null, res => null);
+			api.backTest.getAll(null, res => console.table('home', res), res => null, res => null);
 		})();
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);

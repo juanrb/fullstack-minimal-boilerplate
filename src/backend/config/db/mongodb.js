@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 // Local
-const environment = require('../environment');
+const environment = require('../../../environment');
 
 const options = {
 	useNewUrlParser: true,

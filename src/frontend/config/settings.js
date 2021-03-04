@@ -1,9 +1,11 @@
+import environment from '../../environment'
+
 const settings = {
 	backend: {
 		headers: {
 			'Content-Type': 'application/json',
 		},
-		url: 'https://jsonplaceholder.typicode.com/',
+		url: `${environment.server.url}api/`,
 	},
 
 	logger: {

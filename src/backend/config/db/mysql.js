@@ -2,7 +2,7 @@
 const { Sequelize } = require('sequelize');
 
 // Local
-const environment = require('../environment');
+const environment = require('../../../environment');
 
 const options = {
 	dialect: 'mysql',

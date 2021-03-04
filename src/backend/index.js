@@ -1,7 +1,7 @@
 // server
 const express = require('express');
 const app = express();
-const environment = require('./config/environment');
+const environment = require('../environment');
 
 // db
 const db = require('./config/db');
