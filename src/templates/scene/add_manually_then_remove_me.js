@@ -5,4 +5,8 @@ import ___Scene___ from '../../scenes/___Scene___/___Scene___';
 <Route exact path={routes.___scene___} render={props => <Admin {...props}><___Scene___ {...props} /></Admin>} />
 
 // Add this property to the frontend routes in /frontend/config/settings
-settings.routes.___Scene___
+settings.routes.___Scene___ = '/___scene___'
+
+const defaultMenuItems = [
+	{ title: '___scene___', alt: '___scene___ alt', iconClass: 'icon-___scene___', className: '___scene___-class-name', route: '/___scene___' }, // Add this line to the defaultMenuItems array
+];

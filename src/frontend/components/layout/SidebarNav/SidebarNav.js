@@ -2,6 +2,7 @@
 import React, {
 	// useState,
 } from 'react';
+import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 // Local
@@ -18,20 +19,21 @@ const SidebarNav = props => {
 	// States
 
 	// Variables
+	const history = useHistory();
 
 	// Render
 	return (
 		<nav className={NS}>
 			{NS}
 			<ul>
-				{ props.menuItems.map((e, i) => <li key={i} className={e.className} alt={e.alt} onClick={e.onClick}>{e.title}</li>) }
+				{props.menuItems.map((e, i) => <li key={i} className={e.className} alt={e.alt} onClick={() => history.push(e.route)}>{e.title}</li>)}
 			</ul>
 		</nav>
 	)
 }
 
 const defaultMenuItems = [
-	{ title: 'sample', alt: 'sample alt', iconClass: 'icon-sample', className: 'sample-class-name', onClick: () => console.log('sample clicked') },
+	{ title: 'home', alt: 'home alt', iconClass: 'icon-home', className: 'home-class-name', route: '/home' },
 ];
 
 // DefaultProps
