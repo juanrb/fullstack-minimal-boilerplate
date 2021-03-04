@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 
 // Local
 import './SidebarNav.scss';
+import settings from '../../../config/settings'
 
 // Namespace
 const NS = 'SidebarNav';
@@ -33,7 +34,7 @@ const SidebarNav = props => {
 }
 
 const defaultMenuItems = [
-	{ title: 'home', alt: 'home alt', iconClass: 'icon-home', className: 'home-class-name', route: '/home' },
+	{ title: 'home', alt: 'home alt', iconClass: 'icon-home', className: 'home-class-name', route: settings.routes.home },
 ];
 
 // DefaultProps
