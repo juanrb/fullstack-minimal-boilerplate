@@ -1,7 +1,12 @@
 # fullstack-minimal-boilerplate
 
 ## Description ##
-Backend/frontend architecture automatically set up and easy to scale
+
+Backend/frontend architecture automatically set up and easy to scale.
+
+**Frontend:** Single page app with a template for creating scenes, routing already implemented, navigation automatically added, using ```react```, ```react-helmet-async```, ```react-router-dom```.
+
+**Backend:** Backend architecture in Node using ```express```, ```compression```, ```cors```, ```axios``` and ```response-time``` (pretty useful lib to include the response time in the response header for each request).
 
 ## Installation and execution ##
 
@@ -16,7 +21,7 @@ Run backend: ```nodemon server```
 > ####  Notes
 > To take advantage of the templates, please install this extension for **VSCode**: https://marketplace.visualstudio.com/items?itemName=yuanhjty.code-template-tool, and follow the instructions in ```src/templates/readme.txt``` to set up the templates path.
 
-## To create an API endpoint: ##
+## Backend: how to create an API endpoint ##
 
 * right click on ```src/backend/api``` and name a new folder naming it as the endpoint in lowercase (e.g.: ```posts```).
 * right click on the created folder, and choose *New File / Folder From Template* from the context menu.
@@ -36,7 +41,7 @@ Once that's done, run the backend project and just make a GET request with postm
 ]
 ```
 
-## To create a scene: ##
+## Frontend: how to create a scene ##
 
 * right click on ```src/frontend/scenes``` and name a new folder naming it as the scene in camelcase (e.g.: ```About```).
 * right click on the created folder, and choose *New File / Folder From Template* from the context menu.
@@ -46,3 +51,5 @@ Once that's done, run the backend project and just make a GET request with postm
 
 Once that's done, run the frontend project and you'll see the scene referenced from the SidebarNav component
 
+> ####  Notes
+> In the next release I'll be including ContextAPI and Redux as two different alternatives for state management
