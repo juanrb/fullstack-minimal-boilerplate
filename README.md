@@ -49,7 +49,9 @@ Once that's done, run the backend project and just make a GET request with postm
 * type the API scene name in camelcase
 * follow the steps in the file ```add_manually_then_remove_me.js```
 
-Once that's done, run the frontend project and you'll see the scene referenced from the SidebarNav component
+Once that's done, run the frontend project and you'll see the scene referenced from the SidebarNav component.
+
+In the created scene (About.js in the example) there'll be an async function called ```fetchData()``` inside a ```useEffect()```, it's basically using the api abstraction from ```api.js``` in the same folder, which creates CRUD requests to *jsonplaceholder* by default (when the backend is not needed), or a request to the backend (option initially commented out).
 
 > ####  Notes
 > In the next release I'll be including ContextAPI and Redux as two different alternatives for state management

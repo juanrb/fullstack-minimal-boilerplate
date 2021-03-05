@@ -18,7 +18,7 @@ const App = () => (
 	<div className="App">
 		<HelmetProvider>
 			<Helmet>
-				<title>React Essentials</title>
+				<title>Fullstack Minimal Boilerplate</title>
 				<link rel='shortcut icon' href={'./favicon.ico'} />
 			</Helmet>
 
