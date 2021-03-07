@@ -1,6 +1,7 @@
 // Libs
 import React, {
 	useEffect,
+	useState,
 } from 'react';
 import PropTypes from 'prop-types';
 
@@ -19,6 +20,7 @@ const api = require('./api').default;
  */
 const Home = props => {
 	// States
+	const [users, setUsers] = useState([]);
 
 	// Variables
 
@@ -28,7 +30,7 @@ const Home = props => {
 		 * @description 
 		 */
 		(async function fetchData() {
-			api.home.getAll(null, res => console.table(res), res => null, res => null);
+			api.home.getAll(null, res => setUsers(res), res => null, res => null);
 		})();
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
@@ -37,6 +39,7 @@ const Home = props => {
 	return (
 		<div className={NS}>
 			{NS}
+			{users.length && users.map((e, i) => <p key={i}>{e.name.toLowerCase()}</p>)}
 		</div>
 	);
 }

@@ -2,7 +2,7 @@
 import { helpers } from '../../helpers';
 import environment from '../../../environment';
 
-const ENDPOINT = 'posts';
+const ENDPOINT = 'users';
 
 /**
  * use json placeholder or node backend
