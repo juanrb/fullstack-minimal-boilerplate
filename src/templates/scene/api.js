@@ -9,7 +9,7 @@ const ENDPOINT = 'posts';
  * @example jsonplaceholder endpoints: posts, comments, albums, photos, todos, users
  */
 let api = {
-	___Scene___: helpers.api.crudFactory(environment.apis.jsonPlaceholder.url, ENDPOINT),
+	___scene___: helpers.api.crudFactory(environment.apis.jsonPlaceholder.url, ENDPOINT),
 	// ___Scene___: helpers.api.crudFactory(environment.server.url, ENDPOINT, environment.server.headers),
 }
 
