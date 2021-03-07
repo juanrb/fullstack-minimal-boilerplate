@@ -9,7 +9,7 @@ import {
 
 // Local
 import settings from '../settings';
-import Admin from '../../components/layout/Admin/Admin';
+import Skeleton from '../../components/layout/Skeleton/Skeleton';
 import Home from '../../scenes/Home/Home';
 
 // NOTE: How to lazy load each scene --> const Users = React.lazy(() => import('../scenes/Users/Users'));
@@ -25,7 +25,7 @@ const AppRouter = props => {
 		<BrowserRouter>
 			<Switch className='AppRouter'>
 				{/* Scenes */}
-				<Route exact path={routes.home} render={props => <Admin {...props}><Home {...props} /></Admin>} />
+				<Route exact path={routes.home} render={props => <Skeleton {...props}><Home {...props} /></Skeleton>} />
 
 				{/* Default rounting */}
 				<Route exact path='/' render={() => <Redirect exact from='/' to={routes.home} />} />
