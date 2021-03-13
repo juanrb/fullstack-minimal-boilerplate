@@ -10,4 +10,4 @@ const model = {
 	},
 };
 
-module.exports = sequelize.define('___ApiName___', model);
+module.exports = sequelize.define('___Apiname___', model);
