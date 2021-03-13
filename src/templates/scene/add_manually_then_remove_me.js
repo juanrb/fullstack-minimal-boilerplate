@@ -1,6 +1,6 @@
-// These lines to /frontend/config/AppRouter/AppRouter.js
+// Add these lines to /frontend/config/AppRouter/AppRouter.js
 import ___Scene___ from '../../scenes/___Scene___/___Scene___';
-<Route exact path={routes.___scene___} render={props => <Admin {...props}><___Scene___ {...props} /></Admin>} />
+<Route exact path={routes.___scene___} render={props => <Skeleton {...props}><___Scene___ {...props} /></Skeleton>} />
 
 // Add this property to the frontend routes in /frontend/config/settings
 settings.routes = {

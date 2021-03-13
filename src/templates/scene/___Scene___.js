@@ -1,6 +1,7 @@
 // Libs
 import React, {
 	useEffect,
+	useState,
 } from 'react';
 import PropTypes from 'prop-types';
 
@@ -21,6 +22,7 @@ const api = {
  */
 const ___Scene___ = props => {
 	// States
+	const [___scene___, set___Scene___] = useState([]);
 
 	// Variables
 
@@ -30,7 +32,7 @@ const ___Scene___ = props => {
 		 * @description 
 		 */
 		(async function fetchData() {
-			// api.___scene___.getAll(null, res => null, res => null, res => null);
+			api.___scene___.getAll(null, res => set___Scene___(res), res => null, res => null);
 		})();
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
@@ -39,6 +41,7 @@ const ___Scene___ = props => {
 	return (
 		<div className={NS}>
 			{NS}
+			{___scene___.length && ___scene___.map((e, i) => <p key={i}>{e.id}</p>)}
 		</div>
 	);
 }

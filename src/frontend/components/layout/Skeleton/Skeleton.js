@@ -5,20 +5,20 @@ import React, {
 import PropTypes from 'prop-types';
 
 // Local
-import './Admin.scss';
+import './Skeleton.scss';
 import Canvas from '../Canvas/Canvas';
 import Footer from '../Footer/Footer';
 import HeaderNav from '../HeaderNav/HeaderNav';
 import SidebarNav from '../SidebarNav/SidebarNav';
 
 // Namespace
-const NS = 'Admin';
+const NS = 'Skeleton';
 
 /**
  * @class
  * @description
  */
-const Admin = props => {
+const Skeleton = props => {
 	// States
 
 	// Variables
@@ -36,11 +36,11 @@ const Admin = props => {
 }
 
 // DefaultProps
-Admin.defaultProps = {
+Skeleton.defaultProps = {
 };
 
 // PropTypes
-Admin.propTypes = {
+Skeleton.propTypes = {
 };
 
-export default Admin;
+export default Skeleton;
