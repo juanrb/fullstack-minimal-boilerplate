@@ -26,10 +26,11 @@ const Skeleton = props => {
 	// Render
 	return (
 		<div className={NS}>
-			{NS}
 			<HeaderNav {...props} />
-			<SidebarNav {...props} />
-			<Canvas {...props} />
+				<div className="content">
+					<SidebarNav {...props} />
+					<Canvas {...props} />
+				</div>
 			<Footer {...props} />
 		</div>
 	)

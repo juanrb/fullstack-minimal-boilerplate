@@ -1,10 +1,13 @@
 .SidebarNav {
 	/* DEFINITIONS *********************************************************************************/
 	@mixin base {
-		border: thin lightgray solid;
+		border-right: thin grey solid;
 		display: block;
 		padding: 5px;
+		width: 200px;
+	}
 
+	@mixin menu-item {
 		li {
 			cursor: pointer;
 
@@ -17,4 +20,5 @@
 	/* BODY ****************************************************************************************/
 	@include base();
 
+	@include menu-item();
 }

@@ -1,12 +1,37 @@
+// General overrides
+html,
+body,
+#root,
+.App {
+	height: 100%;
+}
+
+body {
+	font-family: sans-serif;
+	font-weight: lighter;
+	margin: 0;
+}
+
+// see: https://stackoverflow.com/questions/19220582/sticky-header-sticky-footer-variable-height-fluid-middle
 .Skeleton {
 	/* DEFINITIONS *********************************************************************************/
 	@mixin base {
-		border: thin lightgray solid;
-		display: block;
-		padding: 5px;
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+	}
+
+	@mixin content {
+		background-color: lightgrey;
+		display: flex;
+		flex: 1;
+		flex-direction: row;
 	}
 
 	/* BODY ****************************************************************************************/
 	@include base();
 
+	.content {
+		@include content();
+	}
 }

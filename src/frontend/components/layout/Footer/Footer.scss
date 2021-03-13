@@ -1,7 +1,8 @@
 .Footer {
 	/* DEFINITIONS *********************************************************************************/
 	@mixin base {
-		border: thin lightgray solid;
+		background-color: black;
+		color: gray;
 		display: block;
 		padding: 5px;
 	}

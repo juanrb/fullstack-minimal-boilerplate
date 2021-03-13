@@ -1,8 +1,8 @@
 .Canvas {
 	/* DEFINITIONS *********************************************************************************/
 	@mixin base {
-		border: thin lightgray solid;
 		display: block;
+		flex: 1;
 		padding: 5px;
 	}
 
