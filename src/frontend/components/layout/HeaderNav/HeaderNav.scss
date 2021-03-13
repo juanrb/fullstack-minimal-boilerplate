@@ -1,8 +1,11 @@
 .HeaderNav {
 	/* DEFINITIONS *********************************************************************************/
 	@mixin base {
-		border: thin lightgray solid;
-		display: block;
+		align-items: center;
+		background-color: #303030;
+		color: lightgray;
+		display: flex;
+		height: 50px;
 		padding: 5px;
 	}
 
