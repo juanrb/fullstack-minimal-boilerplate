@@ -1,7 +1,8 @@
 .SidebarNav {
 	/* DEFINITIONS *********************************************************************************/
 	@mixin base {
-		border-right: thin grey solid;
+		background-color: #B0B8BF;
+		border-right: thin #b6bab1 solid;
 		display: block;
 		padding: 5px;
 		width: 200px;

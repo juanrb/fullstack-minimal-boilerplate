@@ -39,7 +39,7 @@ const Home = props => {
 	return (
 		<div className={NS}>
 			{NS}
-			{users.length && users.map((e, i) => <p key={i}>{e.name.toLowerCase()}</p>)}
+			{!!users.length && users.map((e, i) => <p key={i}>{e.name.toLowerCase()}</p>)}
 		</div>
 	);
 }
