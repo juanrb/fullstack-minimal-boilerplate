@@ -41,7 +41,7 @@ const ___Scene___ = props => {
 	return (
 		<div className={NS}>
 			{NS}
-			{___scene___.length && ___scene___.map((e, i) => <p key={i}>{e.id}</p>)}
+			{!!___scene___.length && ___scene___.map((e, i) => <p key={i}>{e.id}</p>)}
 		</div>
 	);
 }
