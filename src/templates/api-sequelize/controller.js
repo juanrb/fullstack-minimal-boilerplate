@@ -37,5 +37,5 @@ exports.update = async (req, res, next) => {
  * @description 
  */
 exports.delete = async (req, res, next) => {
-	res.send(await services.delete(req.params.id));
+	res.sendStatus(await services.delete(req.params.id) ? 200 : 400);
 };

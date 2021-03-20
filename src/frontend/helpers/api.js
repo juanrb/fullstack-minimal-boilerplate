@@ -116,7 +116,7 @@ const crudFactory = (backendUrl, endpoint, headers = null) => ({
 	 */
 	save: (body, success, reject, error) => {
 		const method = body.id ? METHODS.PUT : METHODS.POST;
-		const url = `${backendUrl}${endpoint}`;
+		const url = `${backendUrl}${endpoint}${body.id ? '/' + body.id : ''}`;
 		return request(method, headers, body, url, success, reject, error);
 	},
 
@@ -125,7 +125,7 @@ const crudFactory = (backendUrl, endpoint, headers = null) => ({
 	 * @description updates
 	 */
 	update: (body, success, reject, error) => {
-		const url = `${backendUrl}${endpoint}`;
+		const url = `${backendUrl}${endpoint}/${body.id}`;
 		return request(METHODS.PUT, headers, body, url, success, reject, error);
 	},
 
