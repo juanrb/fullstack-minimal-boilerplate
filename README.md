@@ -6,7 +6,7 @@ Backend/frontend architecture automatically set up and easy to scale.
 
 **Frontend:** Single page app with a template for creating scenes, routing already implemented, navigation automatically added, using `react`, `react-helmet-async`, `react-router-dom`.
 
-**Backend:** Backend architecture in Node using `express`, `compression`, `cors`, `axios` and `response-time` (pretty useful lib to include the response time in the response header for each request).
+**Backend:** Backend architecture in Node using `express`, `compression`, `cors` and `response-time` (pretty useful lib to include the response time in the response header for each request).
 
 ## Installation and execution ##
 
