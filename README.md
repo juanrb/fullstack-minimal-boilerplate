@@ -59,3 +59,7 @@ In the created scene (About.js in the example) there'll be an async function cal
 > ####  Notes
 > To debug the frontend, you must first install the Chrome extension *Debugger for Chrome*, run `npm start` first, then (F5 / Start Debugging).
 > To degub the backend, set the setting Auto Attach to `smart`, then run `node server`.
+
+## Deploy to Heroku
+* Add env var REACT_APP_API1_URL = 'https://jsonplaceholder.typicode.com/' to Heroku settings
+* Add env var PUBLIC_URL = '[heroku deployment url]'
