@@ -14,9 +14,9 @@ Rename `.env.example` to `.env`
 
 Run `npm install`
 
-Run frontend: `npm start`
+Run frontend: `npm run front`
 
-Run backend: `node server`
+Run backend: `npm run back`
 
 > ####  Important
 > For the following steps, please install this extension for **VSCode**: https://marketplace.visualstudio.com/items?itemName=yuanhjty.code-template-tool, and follow the instructions in `src/templates/readme.txt` to set up the templates path.
