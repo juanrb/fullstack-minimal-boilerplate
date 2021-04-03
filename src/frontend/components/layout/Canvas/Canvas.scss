@@ -1,6 +1,7 @@
 .Canvas {
 	/* DEFINITIONS *********************************************************************************/
 	@mixin base {
+		background-color: #D2D6DA;
 		display: block;
 		flex: 1;
 		padding: 5px;

@@ -2,9 +2,11 @@
 	/* DEFINITIONS *********************************************************************************/
 	@mixin base {
 		align-items: center;
-		background-color: #303030;
-		color: lightgray;
+		background-color: #65707B;
+		border-bottom: thin #535C65 solid;
+		color: black;
 		display: flex;
+		font-weight: bold;
 		height: 50px;
 		padding: 5px;
 	}

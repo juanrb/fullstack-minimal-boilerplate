@@ -7,4 +7,4 @@ const schema = mongoose.Schema({
 	lastUpdated: Date,
 });
 
-module.exports = mongoose.model('___ApiName___', schema);
+module.exports = mongoose.model('___Apiname___', schema);
