@@ -2,9 +2,7 @@
 const express = require('express');
 const app = express();
 const environment = require('../environment');
-
-// db
-const db = require('./config/db');
+const path = require('path');
 
 // Application setttings
 app.disable('x-powered-by'); // express watermark
@@ -21,8 +19,6 @@ app.get('/*', (req, res) => res.sendFile(path.join(__dirname, '../../build', 'in
 
 // Routing
 app.use('/', require('./config/router'));
-
-// (async () => await sequelize.sync())();
 
 const port = environment.server.port || 3000;
 app.listen(port, () => console.log(`Port: ${port}`));
