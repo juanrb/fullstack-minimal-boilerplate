@@ -21,6 +21,6 @@ module.exports = {
 			'Content-Type': 'application/json',
 		},
 		port: process.env.REACT_APP_SERVER_PORT || process.env.PORT,
-		url: `${process.env.REACT_APP_SERVER_URL}${process.env.REACT_APP_SERVER_PORT ? ':' + process.env.REACT_APP_SERVER_PORT : ''}/api/`,
+		url: `${process.env.REACT_APP_SERVER_URL}${process.env.REACT_APP_SERVER_PORT ? ':' + process.env.REACT_APP_SERVER_PORT : ''}/api`,
 	},
 }

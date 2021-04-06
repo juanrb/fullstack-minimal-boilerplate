@@ -5,7 +5,7 @@ router.use('/', express.static('public'));
 
 /**
  * Add API routes here
- * @example router.use('/api/sample', require('./api/sample/routes'));
+ * @example router.use('/sample', require('./api/sample/routes'));
  */
 
 module.exports = router;
